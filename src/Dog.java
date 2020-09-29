@@ -18,13 +18,14 @@ public class Dog extends Animal implements ICalculatePortion{
      * @param name Läser in namnet på djuret
      * @param weight Läser in vikten på djuret
      */
+    // Polymorfism, använder konstruktorn från superklassen för att skapa en subklass
     public Dog(String name, int weight){
         super(name, weight);
         super.kindOfFood = KindOfFood.DOOGFOOD.toString();
     }
 
     /**
-     * En metod som räkanr ut och skriver ut information om djuret samt hur mycket mat det ska äta
+     * En metod som räknar ut och skriver ut information om djuret samt hur mycket mat det ska äta
      */
     public void calculatePortion(){
         ImageIcon dog = new ImageIcon(Dog.class.getResource("/Images/dog.png"));

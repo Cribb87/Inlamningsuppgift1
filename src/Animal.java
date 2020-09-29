@@ -11,8 +11,9 @@
  */
 public class Animal {
 
-    protected String name;
-    protected int weight;
+    // Inkapsling
+    private String name;
+    private int weight;
     protected String kindOfFood;
 
     /**
