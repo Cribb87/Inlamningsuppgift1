@@ -18,7 +18,7 @@ public class Snake extends Animal{
      * @param name Läser in namnet på djuret
      * @param weight Läser in vikten på djuret
      */
-    // Polymorfism, använder konstruktorn från superklassen för att skapa en subklass
+
     public Snake(String name, int weight) {
         super(name, weight);
         super.kindOfFood = KindOfFood.SNAKEFOOD.toString();
@@ -27,6 +27,7 @@ public class Snake extends Animal{
     /**
      * En metod som räkanr ut och skriver ut information om djuret samt hur mycket mat det ska äta
      */
+    // Polymorfism
     public void calculatePortion(){
         ImageIcon snake = new ImageIcon(Snake.class.getResource("/Images/snake.png"));
         JOptionPane.showMessageDialog(null, "Ormen " + getName() + " ska ha 20g" + kindOfFood, "Orm", JOptionPane.INFORMATION_MESSAGE, snake);
